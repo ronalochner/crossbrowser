@@ -1,0 +1,389 @@
+/* basic site styles*/
+
+<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Pacifico&amp;subset=latin-ext" rel="stylesheet">
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url(../fonts/'OpenSans-Regular-webfont.eot');
+    src: url(../fonts/'OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url(../fonts/'OpenSans-Regular-webfont.woff') format('woff'),
+         url(../fonts/'OpenSans-Regular-webfont.ttf') format('truetype'),
+         url(../fonts/'OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of Eric Meyers reset */
+/* My own basic stylesheet */ 
+/* Header*/
+
+body {
+	background-color: #D3D3D3;
+}
+
+#container {
+	width: 800px;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+
+/* header styles */
+
+header {
+	background-color: pink;
+	background-image: url('../images/person.jpeg');
+	background-size: cover;
+	background-position: center;
+	padding: 50px;
+}
+#logo {
+	background-image: url('../images/logo.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 170px;
+	height: 303px;
+	text-indent: -9999px;
+	border: 0;
+	margin: 22px auto 10px auto;
+	padding: 20px;
+}
+
+header h2 {
+	color: white;
+	font-family: "Arial Black", Arial, sans-serif;
+	text-align: center;
+	padding: 20px;
+	font-size: 2em;
+}
+/* Navigation Styles - Menu */
+
+nav {
+width: 100%;
+height: 35px;
+font-size: 15px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-weight: bold;
+text-align: center;
+background-color: #8AD9FF; /* fallback for older browsers */
+background-color: rgba(138, 217, 255, 0.8);
+
+}
+/* un-audit list has presets, this is how you reset it */
+nav ul {
+	<text-align: left;
+	display: inline;
+	margin: 0;
+	padding: 15px, 4px, 17px, 0px;
+	list-style: none;
+
+
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: -4px;
+	position: relative;
+	padding: 15px 20px;
+	background-color: #00BCD4;
+	cursor: pointer;
+	-webkit-transition: all 0.2s;
+	-ms-transition:all 0.2s;
+	-moz-transition:all 0.2s;
+	-o-transition:all 0.2s;
+	transition: all 0,2s;
+	-color: blue;
+
+}
+
+nav a:hover {
+	color: #4DD0E1;
+	background-color: green;
+
+}
+nav a {
+	color: #292929;
+	padding: 10px;
+}
+
+nav a:hover {
+	color: #f90;
+	background-color: #fff;
+
+}
+/* sub menu drop down style */
+
+nav ul li ul {
+	padding: 0;
+	position: absolute;
+	top: 48px;
+	left: 0;
+	width: 150px;
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.2s; 
+	-ms-transition: opacity 0.2s; 
+	-moz-transition: opacity 0.2s; 
+	-o-transition: opacity 0.2s; 
+	transition: opacity 0.2s;
+
+}
+nav ul li ul li {
+	background: #00ACC1;
+	display: block;
+	color: #fff;
+}
+
+nav ul li ul li:hover {
+	background-color: #4DD0D1;
+
+}
+
+nav ul li:hover ul {
+	display: block;
+	opacity: 1;
+	visibility: visible; 
+}
+
+/* content section */
+
+section {
+	font-family: verdana, Arial, sans-serif;
+	font-size: 100%;
+	color: #000;
+	padding: 8px;
+
+}
+
+section h2, section h3 {
+	font-family: impact, sans-serif;
+	padding: 15px, 15px;
+
+}
+
+section h2 { 
+	color: grey;
+	font-size: 3em;
+	padding: 20px; 
+}
+
+footer {
+	width: 100%;
+	height: 35px;
+	font-size: 15px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	background-color: #8AD9FF; /* fallback for older browsers */
+	background-color: rgba(138, 217, 255, 0.8);
+}
+
+footer ul {
+	height: auto;
+	padding: 8px 0px;
+	margin: 0px;
+	list-style-type: none; 
+
+	/* bullet points gone */
+
+}
+
+footer li {
+	display: inline;
+	padding: 20px;
+}
+
+footer a {
+	text-decoration: none;
+	color: #000000;
+	padding: 8px;
+}
+
+footer a:hover {
+	color: #777;
+	background-color: #fff;
+	padding: 20px;
+
+}
+
+footer small {
+	text-transform: uppercase;
+	padding-bottom: 30px;
+	color: #ffffff;
+
+}
+ /* floating styles */
+
+.island {
+	float: left;
+	margin-right: 15px;
+}
+.left {
+	float: left;
+	width: 600px;
+	padding: 10px;
+}
+
+.right {
+	float: right;
+	background-color: #888888;
+	width: 150px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/* making funky fonts work*/
+
+p {
+	font-family: 'open_sansregular', verdana, sans-serif;
+}
+
+ section h3 {
+ 	font-family: 'Pacifico', cursive, verdana, sans-serif;
+ 	font-size: 2em;
+ }
+
+ section h4 {
+ 	font-family: 'Karla', sans-serif;
+ 	font-size: 1em;
+ }
+
+/* Mozilla Specific CSS */
+@-moz-document url-prefix() {
+ 	body { 
+ 		color: black; 
+ 		background: green; 
+}
+nav ul li {
+	display: inline-block;
+	margin-right: -4px;
+	position: relative;
+	padding: 15px 20px;
+	background-color: red;
+	cursor: pointer;
+	-webkit-transition: all 0.1s;
+	-moz-transition:all 0.3s;
+	-color: blue;
+
+}
+
+nav a:hover {
+	color: white;
+	background-color: green;
+
+}
+
+nav a:hover {
+	color: white;
+	background-color: black;
+
+}
+
+h2	{
+	color: green;
+	text-align: right;
+}
+
+.left {
+	float: right;
+	width: 600px;
+	padding: 10px;
+}
+}
+
+
+
+/* Chrome Specific CSS */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ 	body { 
+ 		color: black; 
+ 		background: yellow; 
+}
+
+nav ul li {
+	background-color: yellow;
+	-webkit-transition: all 0.1s;
+	-moz-transition:all 0.3s;
+	-color: green;
+
+}
+
+nav a:hover {
+	color: white;
+	background-color: red;
+
+}
+
+nav a:hover {
+	color: white;
+	background-color: blue;
+}
+h2	{
+	font-family: 'Pacifico', cursive, verdana, sans-serif;
+	text-align: right;
+}
+
+}
+
+
+
+
+
+
+
+
+
